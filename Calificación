@@ -1,0 +1,44 @@
+Ejercicio 1: (3.5 puntos)
+Ejecución de la expresión original (1.5 puntos)
+
+Ejecución (0.1/0.5): Incorrecto. por que si evaluamos (if0 n 0 (+ n (sum (- n 1)))) buscando el valor de los identificadores
+en el ambiente de sum (if0 n 0 (+ n (sum (- n 1)))) = (if0 5 0 (+ 5 (sum (- 5 1)))) Tenemos un error de variable libre
+Explicación (0.3/1): Se menciona que la función suma los números naturales desde 5 hasta 0, pero se omite la razón por la que ocurre un error de variable libre inicialmente. Se debería haber mencionado el error antes de entrar en la secuencia de evaluación. 
+
+Implementación (1/1): Correcto.
+Explicación (1/1): Correcto.
+
+Ejercicio 2: (3 puntos)
+Evaluación de la expresión (define c #f) ... (c 10) (1.5 puntos)
+
+Ejecución (0.5/0.5): Correcto.
+Explicación (0.5/1): Es clara la explicación pero se puede profundizar más, mostrando cada evaluación.
+por ejemplo:
+
+Realizamos la primera evaluación de la
+continuación guardada en c con el valor 4. El resultado es el siguiente:
+> (+ 1 (+ 2 (+ 3 (+ 4 5))))
+> (+ 1 (+ 2 (+ 3 9)))
+> (+ 1 (+ 2 12))
+> (+ 1 14)
+> 15
+Luego realizamos la evaluación de la continuación guardada en la viriable c con
+el valor 10 y obtemos como resultado:
+> (+ 1 (+ 2 (+ 3 (+ 10 5))))
+> (+ 1 (+ 2 (+ 3 15)))
+> (+ 1 (+ 2 18))
+> (+ 1 20)
+> 21 
+Explicación de la continuación usando notación λ↑ (1.5/1.5 puntos)
+
+Explicación (1.5/1.5): Correcto.
+
+Ejercicio 3: (3.5 puntos)
+Aunque el resultado es correcto falta profundizar más mostrando explicitamente los registros de activación generados por la función definida en
+el ejercicio con la llamada ocurrenciasElementos [1,2,3] [1,2] .
+Igual faltó mostrar los registros de activación generados por la versión de cola con la misma llamada.
+0.6/3.5
+
+*Cuidado con el ejercicio 3*
+
+Puntuación total: 7/10
